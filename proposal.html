@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Marry Me?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow page-glow--left" aria-hidden="true"></div>
+  <div class="page-glow page-glow--right" aria-hidden="true"></div>
+  <div class="page-grain" aria-hidden="true"></div>
+  <div class="particle-field" id="particleField" aria-hidden="true"></div>
+
+  <main class="layout">
+    <section class="hero-card" id="heroCard">
+      <div class="hero-card__shine" aria-hidden="true"></div>
+
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">A love portfolio</p>
+          <p class="recipient">For <span data-field="recipient"></span></p>
+          <h1 data-field="headline"></h1>
+          <p class="lead" data-field="subheadline"></p>
+          <p class="micro-promise" data-field="microPromise"></p>
+
+          <div class="cta-row">
+            <button class="button button--primary" id="readLetterButton" type="button">Read My Letter</button>
+          </div>
+          <p class="hero-note">Your yes opened this page, and every word on it is for you.</p>
+        </div>
+
+        <aside class="proposal-mark" aria-hidden="true">
+          <div class="proposal-mark__halo"></div>
+          <div class="proposal-ring">
+            <span class="proposal-ring__diamond"></span>
+          </div>
+          <p>One question.</p>
+          <strong>One forever.</strong>
+        </aside>
+      </div>
+
+      <div class="details-grid">
+        <article class="detail-tile">
+          <span>How It Started</span>
+          <strong data-field="detailOne"></strong>
+        </article>
+        <article class="detail-tile">
+          <span>What You Are To Me</span>
+          <strong data-field="detailTwo"></strong>
+        </article>
+        <article class="detail-tile">
+          <span>My Promise</span>
+          <strong data-field="detailThree"></strong>
+        </article>
+        <article class="detail-tile">
+          <span>The Answer I Dream Of</span>
+          <strong data-field="detailFour"></strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom-grid">
+      <article class="glass-panel note-panel" id="notePanel">
+        <p class="section-label">My forever letter</p>
+        <h2 data-field="noteTitle"></h2>
+        <p class="copy" data-field="noteBody"></p>
+
+        <div class="answer-row">
+          <button class="button button--primary button--small" id="celebrateYes" type="button">If Your Answer Is Yes</button>
+          <p class="answer-status" id="answerStatus" data-field="answerStatus"></p>
+        </div>
+
+        <p class="signature">
+          Always yours,
+          <span data-field="signature"></span>
+        </p>
+      </article>
+
+      <article class="glass-panel story-panel">
+        <p class="section-label">Our story</p>
+        <h2 data-field="storyTitle"></h2>
+        <div class="story-list" id="storyList"></div>
+      </article>
+    </section>
+
+    <section class="glass-panel promise-panel">
+      <div class="promise-panel__header">
+        <p class="section-label">The life I want with you</p>
+        <h2 data-field="promiseTitle"></h2>
+      </div>
+      <div class="promise-list" id="promiseList"></div>
+    </section>
+
+    <section class="glass-panel memory-panel">
+      <div class="memory-panel__header">
+        <p class="section-label">Our memories</p>
+        <h2 data-field="memoryTitle"></h2>
+        <p class="memory-intro" data-field="memoryIntro"></p>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
